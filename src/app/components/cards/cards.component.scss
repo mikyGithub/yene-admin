@@ -1,0 +1,56 @@
+.cards {
+  width: 566px;
+  margin-top: 355px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 40px 60px;
+}
+.card {
+  width: 282px;
+  height: 160px;
+  flex-direction: column;
+  background: #fefefe;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.card > p{
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 20px;
+
+  color: #000;
+}
+.rounded-trbl {
+  border-radius: 0px 38px;
+}
+.rounded-tlbr {
+  border-radius: 38px 0px;
+}
+.input {
+  background: #e8e8e8;
+  height: 52px;
+  width: 120px;
+  border: none;
+  outline: none;
+  font-size: 21px;
+  line-height: 26px;
+  color: #000;
+  text-align: center;
+}
+.btn-secondary {
+  width: 140px;
+  height: 50px;
+  border: none;
+  outline: none;
+  font-weight: 900;
+  font-size: 24.08px;
+  line-height: 28px;
+
+  color: #000;
+
+  background: #e8e8e8;
+}
