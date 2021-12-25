@@ -106,6 +106,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "yene-admin:build:production",
+            "firebaseProject": "yene-challenge",
+            "firebaseHostingSite": "yene-challenge"
+          }
         }
       }
     }

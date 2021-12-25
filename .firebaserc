@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "yene-challenge": {
+      "hosting": {
+        "yene-admin": [
+          "yene-challenge"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "yene-challenge"
+  }
+}

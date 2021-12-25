@@ -77,6 +77,10 @@ p:last-of-type{
   box-shadow: inset -0.682814px -2.38985px 2.73126px #b30119,
     inset 2.73126px 3.41407px 2.73126px #e62942;
 }
+.btn-primary:hover {
+  background: linear-gradient(97.08deg,  #b00017 101.34%,#ff1f3b -1.46%,);
+  box-shadow: inset 2.73126px 3.41407px 2.73126px #e62942,inset -0.682814px -2.38985px 2.73126px #b30119;
+}
 
 .exchange-img{
   width: 45px;

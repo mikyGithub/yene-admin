@@ -3,8 +3,19 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
-  production: false
+  production: false,
+  firebase: {
+    apiKey: "AIzaSyDGeRqpbdzoLs4oM4udKR_I01cOZw4GcBI",
+    authDomain: "yene-challenge.firebaseapp.com",
+    databaseURL: "https://yene-challenge-default-rtdb.firebaseio.com",
+    projectId: "yene-challenge",
+    storageBucket: "yene-challenge.appspot.com",
+    messagingSenderId: "228328944388",
+    appId: "1:228328944388:web:19b5b7783b43e7dced5651",
+    measurementId: "G-WD3HCCL4M4"
+  }
 };
+
 
 /*
  * For easier debugging in development mode, you can import the following file
