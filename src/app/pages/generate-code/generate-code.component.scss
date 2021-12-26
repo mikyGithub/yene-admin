@@ -1,0 +1,38 @@
+.generate-section {
+  margin: 230px 262px 0 262px;
+}
+.codes {
+  height: 362px;
+  background: #2a5f83;
+  padding: 20px;
+  color: #fff;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 21px;
+}
+.input {
+  background: #fff;
+  color: #6a98b8;
+  padding:  21px 70px;
+  border: none;
+  font-size: 29px;
+  line-height: 34px;
+  outline: none;
+}
+.btn-secondary {
+  padding:  21px 70px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  font-size: 29px;
+  line-height: 34px;
+  color: #fff;
+  background: #2a5f83;
+}
+.btn-secondary:hover {
+  background: rgb(48, 68, 84);
+}

@@ -1,10 +1,10 @@
-<div class="mobile-container">
+<div [ngStyle]="{'background-image': 'url(' + data.bgUrl + ')'}"  class="mobile-container">
   <h2>logo</h2>
   <p>Put your code here</p>
   <input class="otp-input" placeholder="" />
   <img
     class="hero-img"
-    src="https://static.remove.bg/sample-gallery/graphics/bird-thumbnail.jpg"
+    [src]="data.heroUrl"
     alt="Hero Image"
     srcset=""
   />
@@ -16,7 +16,7 @@
     srcset=""
   />
   <p>Your Points</p>
-  <button class="btn-primary">Export</button>
+  <button class="btn-primary">{{data.ctaLabel}}</button>
 
   <img
     class="exchange-img"
@@ -26,3 +26,4 @@
   />
   <p>Exchange</p>
 </div>
+

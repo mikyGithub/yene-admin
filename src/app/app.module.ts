@@ -11,7 +11,16 @@ import { CardsComponent } from './components/cards/cards.component';
 import { environment } from 'src/environments/environment';
 import { AngularFireModule } from '@angular/fire';
 import { AngularFirestoreModule } from '@angular/fire/firestore';
-import { AngularFireStorageModule } from '@angular/fire/storage';
+import { AngularFireDatabase } from '@angular/fire/database';
+import { AngularFireDatabaseModule } from 'angularfire2/database';
+
+import { ApiService } from './api/api.service';
+import {
+  AngularFireStorageModule,
+  AngularFireStorageReference,
+  AngularFireUploadTask,
+  StorageBucket
+} from "@angular/fire/storage";
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,10 +36,11 @@ import { AngularFireStorageModule } from '@angular/fire/storage';
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),
     AngularFirestoreModule, // firestore
-    AngularFireStorageModule // storage
+    AngularFireStorageModule, // storage
+    AngularFireDatabaseModule
 
   ],
-  providers: [],
+  providers: [ApiService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

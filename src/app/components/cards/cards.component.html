@@ -1,18 +1,23 @@
 <div class="cards">
   <div class="card rounded-trbl">
     <p>Change point value</p>
-    <input class="input" placeholder="" />
+    <input class="input" (keyup)="onChangeInput($event,'point')" [value]="data.point" placeholder="" />
   </div>
   <div class="card rounded-tlbr">
     <p>App Background</p>
-    <button class="btn-secondary">Change</button>
+    <input (change)="onFileSelected($event,'bg')" type="file" id="uploadBg" hidden/>
+    <label for="uploadBg" class="btn-secondary">Change</label>
+
   </div>
   <div class="card rounded-tlbr">
     <p>Call to Action</p>
-    <button class="btn-secondary">Export</button>
+    <input class="input" (keyup)="onChangeInput($event,'cta')"  [value]="data.ctaLabel" />
+
   </div>
   <div class="card rounded-trbl">
     <p>Change hero image</p>
-    <button class="btn-secondary">Change</button>
+    <input (change)="onFileSelected($event,'hero')" type="file" id="uploadHero" hidden/>
+    <label for="uploadHero" class="btn-secondary">Change</label>
   </div>
 </div>
+

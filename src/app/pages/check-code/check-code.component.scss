@@ -1,0 +1,45 @@
+.check-code-section {
+  margin: 64px 262px 0 262px;
+}
+table{
+  background: #2a5f83;
+  width: 100%;
+  text-align: center;
+  font-size: 29px;
+  line-height: 60px;
+  color: #fff;
+  border-collapse: collapse;
+}
+thead {
+  height: 65px;
+  background: #e5e5e5;
+  color: #000000;
+}
+tbody{
+  max-height: 76px !important;
+  overflow-y: auto;
+  margin: 18px 50px !important;
+}
+tr{
+  border-bottom: 1px solid #6A98B8;
+}
+
+.actions {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 21px;
+}
+.btn-secondary {
+  padding: 21px 70px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background: #2a5f83;
+  font-size: 29px;
+  line-height: 34px;
+}
+.btn-secondary:hover {
+  background: rgb(48, 68, 84);
+}

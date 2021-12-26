@@ -42,6 +42,9 @@
   text-align: center;
 }
 .btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 140px;
   height: 50px;
   border: none;
@@ -49,9 +52,8 @@
   font-weight: 900;
   font-size: 24.08px;
   line-height: 28px;
-
+  cursor:pointer;
   color: #000;
-
   background: #e8e8e8;
 }
 .btn-secondary:hover {
