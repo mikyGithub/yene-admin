@@ -6,9 +6,12 @@
         <th>Status</th>
       </thead>
       <tbody>
-        <tr *ngFor="let item of [1,2,3,4,5,6,7,8,9,10,11,12,12,12,1212]">
-          <td>Germany</td>
-          <td>✓</td>
+        <tr *ngFor="let item of generatedCodes">
+          <td>{{item?.code}}</td>
+          <td><ng-container *ngIf="item?.status;">
+            ✓
+          </ng-container>
+           </td>
         </tr>
       </tbody>
     </table>

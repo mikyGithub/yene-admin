@@ -2,14 +2,11 @@
   <div class="codes">
 
 
-      <p *ngFor="let code of generatedCodes">{{code}}</p>
+      <p *ngFor="let item of generatedCodes">{{item?.code}}</p>
 
  </div>
   <div class="actions">
-
-
-    <input class="input" (keyup)="generateCode($event)" placeholder="No of codes to generate?"   />
-
-    <button class="btn-secondary" [disabled]="generateCode.length===0" (click)="submitCode()">Generate new code</button>
+    <div class="noOfCodes">{{generatedCodes.length}} codes</div>
+    <button class="btn-secondary"  (click)="generateCode()">Generate new code</button>
   </div>
 </div>

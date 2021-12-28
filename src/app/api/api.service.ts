@@ -17,7 +17,7 @@ export class ApiService {
     return this.http.get(`${this.endpoint.getCodes}`);
   }
 
-  generateCode(data: any): Observable<any> {
-    return this.http.post<any>(`${this.endpoint.generateCode}`, data);
+  generateCode(): Observable<any> {
+    return this.http.post<any>(`${this.endpoint.generateCode}`,undefined);
   }
 }

@@ -1,32 +1,21 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/api/api.service';
+import { Code } from 'src/app/model/code';
 
 @Component({
   templateUrl: './generate-code.component.html',
   styleUrls: ['./generate-code.component.scss'],
 })
 export class GenerateCodeComponent {
-  generatedCodes: String[] = [];
+  generatedCodes : Code[] = [];
+  constructor(private readonly apiService:ApiService) { }
 
-  constructor(private readonly apiService:ApiService) {
+  ngOnInit(): void {
+    this.apiService.getCodes().subscribe(result => {this.generatedCodes = result; console.log(result)});
   }
 
-  generateCode(event: any): void {
-    this.generatedCodes = [];
-    const totalRequiredCodes: number = event.target.value;
-    while (this.generatedCodes.length < totalRequiredCodes) {
-      var singleCode = '';
-      var alphabet = 'abcdefghijklmnopqrstuvwxyz';
-
-      while (singleCode.length < 6) {
-        singleCode += alphabet[Math.floor(Math.random() * alphabet.length)];
-      }
-      this.generatedCodes.push(singleCode);
-    }
-  }
-
-  submitCode():void{
-    this.apiService.generateCode(this.generatedCodes);
+  generateCode(): void {
+    this.apiService.generateCode();
   }
 
 
