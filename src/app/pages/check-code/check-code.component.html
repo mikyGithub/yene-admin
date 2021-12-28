@@ -7,11 +7,11 @@
     <tbody>
       <tr *ngFor="let item of generatedCodes">
         <td>{{ item?.code }}</td>
-        <td><ng-container *ngIf="item?.status"> ✓ </ng-container></td>
+        <td><ng-container *ngIf="item?.status==='done'"> ✓ </ng-container></td>
       </tr>
     </tbody>
   </table>
   <div class="actions">
-    <button class="btn-secondary">Refresh Code</button>
+    <button class="btn-secondary" (click)="getCodes()">Refresh Code</button>
   </div>
 </div>

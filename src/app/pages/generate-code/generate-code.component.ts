@@ -17,9 +17,11 @@ export class GenerateCodeComponent {
       this.generatedCodes = result;
       this.isLoading = false;
     });
+
+
   }
 
   generateCode(): void {
-    this.apiService.generateCode();
+    this.apiService.generateCode().subscribe();
   }
 }

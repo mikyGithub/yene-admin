@@ -12,10 +12,17 @@ export class ApiService {
     generateCode: `${environment.api}/generatecode`,
   };
 
-  constructor(private readonly http: HttpClient,private db: AngularFirestore,) {}
+  constructor(
+    private readonly http: HttpClient,
+    private readonly db: AngularFirestore
+  ) {}
 
   getCodes(): Observable<any> {
     return this.http.get(`${this.endpoint.getCodes}`);
+  }
+
+  generateCode(): Observable<any> {
+    return this.http.post<any>(`${this.endpoint.generateCode}`, {});
   }
 
   getApplicationSetting(): Observable<any> {
@@ -26,7 +33,4 @@ export class ApiService {
   }
 
 
-  generateCode(): Observable<any> {
-    return this.http.post<any>(`${this.endpoint.generateCode}`,{});
-  }
 }

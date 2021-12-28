@@ -12,6 +12,11 @@ export class CheckCodeComponent implements OnInit {
   constructor(private readonly apiService: ApiService) {}
 
   ngOnInit(): void {
+    this.getCodes();
+  }
+
+
+  getCodes():void{
     this.isLoading = true;
     this.apiService.getCodes().subscribe((result) => {
       this.generatedCodes = result;
