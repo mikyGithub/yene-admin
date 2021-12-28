@@ -17,10 +17,8 @@ import { AngularFireDatabaseModule } from 'angularfire2/database';
 import { ApiService } from './api/api.service';
 import {
   AngularFireStorageModule,
-  AngularFireStorageReference,
-  AngularFireUploadTask,
-  StorageBucket
 } from "@angular/fire/storage";
+import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
@@ -32,6 +30,7 @@ import {
     CardsComponent
   ],
   imports: [
+    HttpClientModule,
     BrowserModule,
     AppRoutingModule,
     AngularFireModule.initializeApp(environment.firebase),

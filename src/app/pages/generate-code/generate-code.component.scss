@@ -4,7 +4,16 @@
 .codes {
   height: 362px;
   background: #2a5f83;
-  padding: 20px;
+  padding: 70px 20px;
+  color: #fff;
+  display: grid;
+  grid-template-columns: 20% 20% 20% 20% 20%;
+  grid-template-rows: 20% 20% 20% 20% 20%;
+  gap: 10px 20px;
+}
+.codes>p {
+  font-size: 29px;
+  line-height: 34px;
   color: #fff;
 }
 
