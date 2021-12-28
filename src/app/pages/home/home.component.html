@@ -1,8 +1,11 @@
+<app-loading *ngIf="isLoading"></app-loading>
 <div class="home-container">
   <div class="card-section">
-    <app-cards [data]="data"></app-cards>
+    <app-cards [appSetting]="appSetting"></app-cards>
   </div>
   <div class="mobile-interface">
-    <app-mobile-interface-demo [data]="data"></app-mobile-interface-demo>
+    <app-mobile-interface-demo
+      [appSetting]="appSetting"
+    ></app-mobile-interface-demo>
   </div>
 </div>

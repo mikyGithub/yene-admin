@@ -19,6 +19,7 @@ import {
   AngularFireStorageModule,
 } from "@angular/fire/storage";
 import { HttpClientModule } from '@angular/common/http';
+import { LoadingComponent } from './components/loading/loading.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -27,7 +28,8 @@ import { HttpClientModule } from '@angular/common/http';
     CheckCodeComponent,
     SideBarComponent,
     MobileInterfaceDemoComponent,
-    CardsComponent
+    CardsComponent,
+    LoadingComponent
   ],
   imports: [
     HttpClientModule,

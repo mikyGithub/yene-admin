@@ -1,12 +1,12 @@
+<app-loading *ngIf="isLoading"></app-loading>
 <div class="generate-section">
   <div class="codes">
-
-
-      <p *ngFor="let item of generatedCodes">{{item?.code}}</p>
-
- </div>
+    <p *ngFor="let item of generatedCodes">{{ item?.code }}</p>
+  </div>
   <div class="actions">
-    <div class="noOfCodes">{{generatedCodes.length}} codes</div>
-    <button class="btn-secondary"  (click)="generateCode()">Generate new code</button>
+    <div class="noOfCodes">{{ generatedCodes.length }} codes</div>
+    <button class="btn-secondary" (click)="generateCode()">
+      Generate new code
+    </button>
   </div>
 </div>

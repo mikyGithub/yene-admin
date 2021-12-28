@@ -1,23 +1,40 @@
+<app-loading *ngIf="isLoading"></app-loading>
 <div class="cards">
   <div class="card rounded-trbl">
     <p>Change point value</p>
-    <input class="input" (keyup)="onChangeInput($event,'point')" [value]="data.point" placeholder="" />
+    <input
+      class="input"
+      (keyup)="onChangeInput($event, 'point')"
+      [value]="appSetting.point"
+      placeholder=""
+    />
   </div>
   <div class="card rounded-tlbr">
     <p>App Background</p>
-    <input (change)="onFileSelected($event,'bg')" type="file" id="uploadBg" hidden/>
+    <input
+      (change)="onFileSelected($event, 'bg')"
+      type="file"
+      id="uploadBg"
+      hidden
+    />
     <label for="uploadBg" class="btn-secondary">Change</label>
-
   </div>
   <div class="card rounded-tlbr">
     <p>Call to Action</p>
-    <input class="input" (keyup)="onChangeInput($event,'cta')"  [value]="data.ctaLabel" />
-
+    <input
+      class="input"
+      (keyup)="onChangeInput($event, 'cta')"
+      [value]="appSetting.ctaLabel"
+    />
   </div>
   <div class="card rounded-trbl">
     <p>Change hero image</p>
-    <input (change)="onFileSelected($event,'hero')" type="file" id="uploadHero" hidden/>
+    <input
+      (change)="onFileSelected($event, 'hero')"
+      type="file"
+      id="uploadHero"
+      hidden
+    />
     <label for="uploadHero" class="btn-secondary">Change</label>
   </div>
 </div>
-
