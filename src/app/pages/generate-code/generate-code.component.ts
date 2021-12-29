@@ -23,6 +23,7 @@ export class GenerateCodeComponent {
     });
   }
   generateCode(): void {
+    this.showToast = false;
     this.apiService.generateCode().subscribe((result) => {
       if(result){
         this.showToast=true;
