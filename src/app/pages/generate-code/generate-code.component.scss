@@ -1,15 +1,19 @@
 .generate-section {
   margin: 230px 262px 0 262px;
 }
+
 .codes {
-  height: 362px;
   background: #2a5f83;
+  height: 362px;
   padding: 70px 20px;
+  display: block;
   color: #fff;
   display: grid;
   grid-template-columns: 20% 20% 20% 20% 20%;
   grid-template-rows: 20% 20% 20% 20% 20%;
   gap: 10px 20px;
+  overflow-y: auto;
+  overflow-x: hidden;
 }
 .codes>p {
   font-size: 29px;

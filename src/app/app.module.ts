@@ -20,6 +20,7 @@ import {
 } from "@angular/fire/storage";
 import { HttpClientModule } from '@angular/common/http';
 import { LoadingComponent } from './components/loading/loading.component';
+import { MessageServiceComponent } from './components/message-service/message-service.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -29,7 +30,8 @@ import { LoadingComponent } from './components/loading/loading.component';
     SideBarComponent,
     MobileInterfaceDemoComponent,
     CardsComponent,
-    LoadingComponent
+    LoadingComponent,
+    MessageServiceComponent
   ],
   imports: [
     HttpClientModule,

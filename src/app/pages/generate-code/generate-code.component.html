@@ -1,4 +1,5 @@
 <app-loading *ngIf="isLoading"></app-loading>
+<app-message-service *ngIf="showToast"></app-message-service>
 <div class="generate-section">
   <div class="codes">
     <p *ngFor="let item of generatedCodes">{{ item?.code }}</p>

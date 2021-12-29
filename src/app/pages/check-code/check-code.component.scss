@@ -11,17 +11,27 @@ table {
   border-collapse: collapse;
 }
 thead {
+  display: flex;
   height: 65px;
   background: #e5e5e5;
   color: #000000;
+  justify-content: space-around;
+  padding: 0px 70px;
 }
 tbody {
-  max-height: 76px !important;
+  display: block;
+  height: 600px !important;
   overflow-y: auto;
-  margin: 18px 50px !important;
+  width: 90%;
+  padding: 18px 50px !important;
+
 }
 tr {
+  padding: 3px;
   border-bottom: 1px solid #6a98b8;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
 }
 
 .actions {

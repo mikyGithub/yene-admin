@@ -3,24 +3,25 @@
   class="mobile-container"
 >
   <h2>logo</h2>
-  <p>Put your code here</p>
+  <h3>Put your code here</h3>
   <div class="otp-input"></div>
   <img class="hero-img" [src]="appSetting.heroUrl" alt="Hero Image" srcset="" />
-  <div class="counter">{{appSetting.point}}</div>
+  <div class="counter">{{ appSetting.point }}</div>
   <img
     class="robot-img"
     src="./assets/images/robot.png"
     alt="Robot Image"
     srcset=""
   />
-  <p>Your Points</p>
+  <h3>Your Points</h3>
   <button class="btn-primary">{{ appSetting.ctaLabel }}</button>
-
-  <img
-    class="exchange-img"
-    src="./assets/svgs/exchange.svg"
-    alt="Exchange Image"
-    srcset=""
-  />
-  <p>Exchange</p>
+  <div class="bottom-section">
+    <img
+      class="exchange-img"
+      src="./assets/svgs/exchange.svg"
+      alt="Exchange Image"
+      srcset=""
+    />
+    <p>Exchange</p>
+  </div>
 </div>
